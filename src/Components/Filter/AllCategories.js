@@ -6,8 +6,8 @@ const AllCategories = () => {
             <div className="allFilters upperFilters">
                 <h2 className="h2Filter">Filter by Category:</h2>
                 <div className="allFilters">
-                    {['ALL', 'EARRINGS', 'NECKLACES', 'SPECIALTY'].
-                    map(category => {
+                    {['ALL', 'EARRINGS', 'NECKLACES', 'SPECIALTY']
+                    .map(category => {
                         return(
                             <div key={category.id}>
                                 <Filter className="allFilters" category={category} />
@@ -19,10 +19,13 @@ const AllCategories = () => {
             <div className="allFilters bottomFilters">
                 <h2 className="h2Filter">Filter by Material:</h2>
                 <div className="allFilters">
-                    {['METAL', 'GLASS', 'PLASTIC', 'PEARL', 'ALL'].
-                    map(category =>
-                        <Filter category={category} />
-                    )}
+                    {['METAL', 'GLASS', 'PLASTIC', 'PEARL', 'ALL']
+                    .map(category => {
+                        return(
+                            <div key={category.id}>
+                                <Filter category={category} />
+                            </div>
+                    )})}
                 </div>
             </div>
 
