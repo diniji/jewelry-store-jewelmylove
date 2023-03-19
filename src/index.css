@@ -5,9 +5,694 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, #949494, #c89c7f);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: linear-gradient(to right, #333232, rgba(160, 159, 159, 0.795), #f8be9a);
+  padding: 25px;
+  font-size: 25px;
+}
+
+.navLink {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #020202;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.one {
+  margin-right: auto;
+  text-transform: none;
+  color: white;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.logoImg {
+  width: 44px;
+  margin-right: 5px;
+}
+
+.two {
+  position: relative;
+}
+
+.badgy {
+    position: absolute;
+    background-color: #333232;
+    right:-.5rem;
+    width:1.5rem;
+    text-align: center;
+    line-height: 1.5rem;;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid black;
+}
+
+.homeWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.containerHome {
+  display: flex;
+  margin: 20px;
+}
+
+.h2Home {
+  font-size: 120px;
+  margin: 0 20px;
+}
+
+.imgOneHome {
+  width: 650px;
+}
+
+.imgTwoHome {
+  width: 450px;
+}
+
+.completeContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bloc {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.twoImages {
+  margin: 80px 40px 0 40px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.imgFull {
+  width: 275px;
+}
+
+.imgCloseup {
+  width: 220px;
+}
+
+.description {
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px 4px black;
+  margin-left: 40px;
+}
+
+.column#grayscale img {
+	-webkit-filter: grayscale(100%) blur(2px);
+	filter: grayscale(100%) blur(2px);
+	-webkit-transition: .8s ease-in-out;
+	transition: .8s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.column#grayscale:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.photo#zoomIn img {
+  top: 50px;
+  left: 155px;
+  position: absolute;
+  box-shadow: 0 0 10px 10px #464343;
+}
+
+img {
+  transition: transform 0.5s;
+}
+
+.photo#zoomIn:hover img {
+	transform: scale(1.1);
+  -webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+.allFilters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.upperFilters {
+  margin-top: 15px;
+}
+
+.bottomFilters {
+  margin-top: -15px;
+}
+
+.categoryButtonSelected {
+  background-image: linear-gradient(to right, #d1cbcb, #f0c7ad);
+  margin: 10px;
+  padding: 11px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.categoryButton {
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid rgb(252, 249, 249);
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+}
+
+.categoryButton:hover {
+  border: none;
+  background-image: linear-gradient(to right, #d1cbcb, #f0c7ad);
+  padding: 11px;
+  color: black;
+}
+
+.addRemoveButton {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  margin: 0 10px 10px 10px;
+}
+
+.plusMinus {
+  font-weight: 900;
+  font-size: 23px;
+  text-shadow: none;
+}
+
+.addToCartButton {
+  padding: 10px 25px;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.3),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-16 {
+  border: none;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px rgba(218, 216, 215, 0.6),
+   -4px -4px 5px 0px rgba(218, 216, 215, 0.6),
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+
+.cartImg {
+  width: 130px;
+}
+
+.binIcon {
+  width: 24px;
+}
+
+.cartH2 {
+  font-size: 50px;
+  text-align: end;
+  margin-right: 50px;
+}
+
+.itemInCart {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 30px;
+  background-color: rgba(245, 236, 220, 0.103);
+}
+
+.prodInfoInCart {
+  margin-left: 30px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media all and (max-width: 1280px) {
+
+  .imgOneHome {
+    width: 500px;
+  }
+
+  .imgTwoHome {
+    width: 450px;
+  }
+
+  .h2Home {
+    font-size: 67px;
+    margin: 0 10px;
+    width: 490px;
+  }
+
+  .twoImages {
+    width: 380px;
+    height: 410px;
+  }
+  
+  .imgFull {
+    width: 265px;
+  }
+  
+  .imgCloseup {
+    width: 205px;
+  }
+
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media all and (max-width: 950px) {
+
+  .homeWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;
+  }
+
+  .imgOneHome {
+    width: 320px;
+  }
+
+  .imgTwoHome {
+    width: 260px;
+  }
+
+  .h2Home {
+    font-size: 55px;
+    margin: 0 10px;
+    width: 400px;
+  }
+
+  nav {
+    font-size: 18px;
+  }
+
+  .navLink {
+    padding: 10px 5px;
+  }
+  
+  .one {
+    font-size: 20px;
+  }
+  
+  .logoImg {
+    width: 33px;
+  }
+
+  .navsImg {
+    width: 25px;
+  }
+
+  .badgy {
+    right: -.7rem;
+    width: 1rem;
+    line-height: 1rem;;
+    font-size: 0.7rem;
+}
+
+  .parHome {
+    font-size: 11px;
+    width: 600px;
+  }
+
+  .twoImages {
+    margin: 50px 10px 0 10px;
+    width: 320px;
+    height: 300px;
+  }
+  
+  .imgFull {
+    width: 200px;
+  }
+  
+  .imgCloseup {
+    width: 140px;
+  }
+  
+  .description {
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px black;
+    margin-left: 40px;
+  }
+
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media all and (max-width: 550px) {
+
+  .containerHome {
+    margin: 10px;
+  }
+
+  .imgOneHome {
+    width: 190px;
+  }
+
+  .imgTwoHome {
+    width: 170px;
+  }
+
+  .h2Home {
+    font-size: 20px;
+    margin: 0 5px;
+    width: 150px;
+  }
+
+  nav {
+    font-size: 15px;
+  }
+
+  .navLink {
+    padding: 10px 5px;
+  }
+  
+  .one {
+    font-size: 16px;
+    margin-top: -10px;
+  }
+  
+  .logoImg {
+    width: 24px;
+  }
+
+  .navsImg {
+    display: none;
+  }
+
+  .badgy {
+    right: -.7rem;
+    top: .3rem;
+    width: .9rem;
+    line-height: .9rem;;
+    font-size: 0.6rem;
+}
+  
+  .upperFilters {
+    margin-top: 10px;
+  }
+  
+  .bottomFilters {
+    margin-top: -15px;
+  }
+  
+  .categoryButtonSelected {
+    margin: 5px;
+    padding: 4px;
+    font-size: 10px;
+  }
+  
+  .categoryButton {
+    margin: 5px;
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .h2Filter {
+    font-size: 14px;
+    width: 70px;
+  }
+  
+  .categoryButton:hover {
+    padding: 4px;
+  }
+
+  .twoImages {
+    margin: 20px 10px 0 10px;
+    width: 257px;
+    height: 255px;
+  }
+  
+  .imgFull {
+    width: 170px;
+  }
+  
+  .imgCloseup {
+    width: 120px;
+  }
+
+  .photo#zoomIn img {
+    top: 45px;
+    left: 120px;
+    box-shadow: 0 0 10px 7px #464343;
+  }
+  
+  .description {
+    text-shadow: 2px 2px 4px black;
+    margin-left: 10px;
+  }
+
+  .h2Jewel, .h3Jewel {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .addRemoveButton {
+    font-size: 17px;
+    margin: 5px 10px 10px 10px;
+  }
+  
+  .plusMinus {
+    font-size: 17px;
+  }
+
+  .addToCartButton {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .parHome {
+    font-size: 8px;
+  }
+
+  .itemInCart {
+    margin: 20px;
+    padding: 11px;
+  }
+
+  .cartH2 {
+    font-size: 35px;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .h2Cart, .h3Cart {
+    font-size: 12px;
+  }
+
+  .cartImg{
+    width: 85px;
+  }
+
+  .binIcon {
+    width: 14px;
+  }
+
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media all and (max-width: 280px) {
+
+  .imgOneHome {
+    width: 135px;
+  }
+
+  .imgTwoHome {
+    width: 120px;
+  }
+
+  .h2Home {
+    font-size: 16px;
+    width: 120px;
+  }
+
+  nav {
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  .navLink {
+    padding: 7px 3px;
+  }
+  
+  .one {
+    font-size: 12px;
+    margin-top: -5px;
+  }
+  
+  .logoImg {
+    width: 18px;
+    margin-right: 2px;
+  }
+
+  .badgy {
+    right: -.2rem;
+    top: .1rem;
+    width: .6rem;
+    line-height: 0.6rem;;
+    font-size: 0.5rem;
+}
+  
+  .upperFilters {
+    margin-top: 10px;
+  }
+  
+  .bottomFilters {
+    margin-top: -15px;
+  }
+  
+  .categoryButtonSelected {
+    margin: 2px;
+    padding: 3px;
+    font-size: 8px;
+  }
+  
+  .categoryButton {
+    margin: 2px;
+    padding: 3px;
+    font-size: 8px;
+  }
+
+  .h2Filter {
+    font-size: 10px;
+  }
+  
+  .categoryButton:hover {
+    padding: 3px;
+  }
+
+  .twoImages {
+    margin: 15px 10px 0 10px;
+    width: 218px;
+    height: 233px;
+  }
+  
+  .imgFull {
+    width: 155px;
+  }
+  
+  .imgCloseup {
+    width: 100px;
+  }
+
+  .photo#zoomIn img {
+    left: 100px;
+    box-shadow: 0 0 10px 6px #464343;
+  }
+  
+  .description {
+    text-shadow: 2px 2px 4px black;
+    margin-left: 10px;
+  }
+
+  .h2Jewel, .h3Jewel {
+    font-size: 16px;
+    margin: 9px;
+  }
+
+  .addRemoveButton {
+    font-size: 15px;
+    margin: 3px 5px 10px 5px;
+  }
+  
+  .plusMinus {
+    font-size: 16px;
+  }
+
+  .addToCartButton {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .parHome {
+    font-size: 8px;
+  }
+
+  .itemInCart {
+    margin: 18px;
+    padding: 10px;
+  }
+
+  .cartH2 {
+    font-size: 32px;
+  }
+
+  .h2Cart, .h3Cart {
+    font-size: 11px;
+  }
+
+  .cartImg{
+    width: 80px;
+  }
+
+  .binIcon {
+    width: 12px;
+  }
+
 }
