@@ -156,7 +156,7 @@ const dataJewels = [
         imgFull: './images/complete/20',
         imgCloseup: './images/closeup/20-closeup',
         title: 'Real Cherry Earrings',
-        price: 2,
+        price: 1,
         category: ['SPECIALTY']
     },
     {

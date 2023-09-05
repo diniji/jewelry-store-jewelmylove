@@ -41,7 +41,7 @@ function Home() {
                 <img src={photoSix} className="imgTwoHome" alt="green glass jewelry" />
                 <h2 className="h2Home">CHARM</h2>
             </div>
-            <p className="parHome">The site was created for educational purposes. The images were taken from sources such as: unsplash.com, pexels.com, freepik.com, gifer.com, pixabay.com,...
+            <p className="parHome">The site was created for educational purposes. The images were taken from sources such as: unsplash.com, pexels.com, freepik.com, gifer.com, pixabay.com, shutterstock.com, icons8.com,...
 </p>
         </div>
     )
