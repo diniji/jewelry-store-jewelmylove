@@ -7,6 +7,7 @@ function Jewellery() {
         <div>
             <AllCategories />
             <Jewels />
+            <p className="bottomLogo">JewelMyLove</p>
         </div>
     )
 }

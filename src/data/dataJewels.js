@@ -49,7 +49,7 @@ const dataJewels = [
     },
     {
         id: 7,
-        imgFull: './images/complete/5',
+        imgFull: './images/complete/5b',
         imgCloseup: './images/closeup/5-closeup',
         title: 'Golden Stars Earrings',
         price: 50,
@@ -137,7 +137,7 @@ const dataJewels = [
     },
     {
         id: 18,
-        imgFull: './images/complete/15',
+        imgFull: './images/complete/15b',
         imgCloseup: './images/closeup/15-closeup',
         title: 'Burlesque Pearls Necklace',
         price: 80,

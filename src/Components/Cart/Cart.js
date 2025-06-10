@@ -18,8 +18,9 @@ const Cart = () => {
                         <CartItem cartItem={cartItem}/>
                     </div>
             )})}
-
+            
         </div>
+        
     )
 }
 

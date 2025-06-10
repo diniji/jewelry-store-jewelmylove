@@ -11,10 +11,8 @@ import Cart from './Components/Cart/Cart';
 import Jewellery from "./Jewellery";
 import Home from "./Home";
 
-import pic from './Images/icons8-jewelry-96.png';
-import pic2 from './Images/icons8-jewel-32.png';
-import pic3 from './Images/icons8-home-32.png';
-import pic4 from './Images/icons8-shopping-cart-32.png';
+import pic from './Images/icons8-necklace-100b.png';
+import pic4 from './Images/icons8-bag-100.png';
 
 import { useSelector } from "react-redux";
 import { getTotalQuantity } from "./redux/cartSlice";
@@ -27,10 +25,10 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to="/" className="navLink one"><img src={pic} className="logoImg" alt="jewelry logo" /> JewelMyLove</Link>
-        <Link to="/" className="navLink"><img src={pic3} className="navsImg" alt="jewelry logo" /> Home</Link>
-        <Link to="/jewellery" className="navLink"><img src={pic2} className="navsImg" alt="jewelry logo" /> Jewelry</Link>
-        <Link to="/cart" className="navLink two"><img src={pic4} className="navsImg" alt="jewelry logo" /> Cart <span className="badgy">{totQuantity}</span></Link>
+        <Link to="/" className="navLink one"><img src={pic} className="logoImg" alt="jewelry logo" /> <span className="logoText">JewelMyLove</span></Link>
+        <Link to="/" className="navLink second">About</Link>
+        <Link to="/jewellery" className="navLink second">Jewelry</Link>
+        <Link to="/cart" className="navLink two"><img src={pic4} className="navsImgCart" alt="jewelry logo" /><span className="badgy">{totQuantity}</span></Link>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
