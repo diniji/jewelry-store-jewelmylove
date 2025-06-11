@@ -129,6 +129,7 @@ nav {
 
 .navsImgCart {
   width: 28px;
+  margin-top: 3px;
 }
 
 .two {
@@ -138,11 +139,11 @@ nav {
 .badgy {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.7);
-    right:-.2rem;
-    top: 0.4rem;
+    right: 0.05rem;
+    top: 0.35rem;
     width:1.5rem;
     text-align: center;
-    line-height: 1.3rem;;
+    line-height: 1.5rem;;
     font-size: 1rem;
     border-radius: 50%;
     color: black;
@@ -221,12 +222,12 @@ nav {
   white-space: nowrap; /* Prevent text wrapping */
 }
 
-.footer {
-  /* margin-top: 80px;
+/* .footer {
+  margin-top: 80px;
   margin-left: -100px;
   padding: 80px 0;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)); */
-}
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+} */
 
 h2 {
   font-family: 'Montserrat', sans-serif;
@@ -592,6 +593,11 @@ img {
     cursor: pointer;
     z-index: 2;
   }
+  
+  .videoButton:hover {
+    padding: 41px 91px;
+    border: none;
+  }
 
   nav {
     padding: 15px 60px 15px 40px;
@@ -735,6 +741,11 @@ img {
     padding: 35px 85px;
     font-size: 3rem;
     font-weight: 100;
+  }
+
+  .videoButton:hover {
+    padding: 36px 86px;
+    border: none;
   }
 
   .videoContainer {
@@ -986,6 +997,11 @@ img {
     font-weight: 150;
   }
 
+  .videoButton:hover {
+    padding: 31px 76px;
+    border: none;
+  }
+
 
 }
 
@@ -1041,8 +1057,8 @@ img {
 
   .badgy {
     right: .2rem;
-    width: 1.2rem;
-    line-height: 1.2rem;;
+    width: 1.3rem;
+    line-height: 1.3rem;;
     font-size: 0.8rem;
 }
 
@@ -1295,6 +1311,11 @@ img {
     font-weight: 100;
   }
 
+  .videoButton:hover {
+    padding: 21px 61px;
+    border: none;
+  }
+
   nav {
     padding: 10px 30px 10px 16px;
     font-size: 20px;
@@ -1511,8 +1532,8 @@ img {
   }
 
   .badgy {
-    right: -.1rem;
-    top: .4rem;
+    right: 0rem;
+    top: .5rem;
     width: 1.2rem;
     line-height: 1.2rem;;
     font-size: 0.6rem;
@@ -1530,6 +1551,11 @@ img {
     padding: 20px 50px;
     font-size: 2rem;
     font-weight: 100;
+  }
+
+  .videoButton:hover {
+    padding: 21px 51px;
+    border: none;
   }
 
   .containerHome {
@@ -1649,6 +1675,11 @@ img {
     font-weight: 100;
   }
 
+  .videoButton:hover {
+    padding: 21px 47px;
+    border: none;
+  }
+
 }
 
 
@@ -1702,11 +1733,12 @@ img {
 
   .navsImgCart {
     width: 28px;
+    margin-top: 0px;
   }
 
   .badgy {
-    right: -.2rem;
-    top: -.05rem;
+    right: -.1rem;
+    top: .1rem;
     width: 1.2rem;
     line-height: 1.2rem;;
     font-size: 0.6rem;
@@ -1759,6 +1791,11 @@ img {
     padding: 16px 26px;
     font-size: 2rem;
     font-weight: 100;
+  }
+
+  .videoButton:hover {
+    padding: 17px 27px;
+    border: none;
   }
 
 }
@@ -1907,6 +1944,11 @@ img {
     font-weight: 100;
   }
 
+  .videoButton:hover {
+    padding: 15px 23px;
+    border: none;
+  }
+
   .h2Home {
     position: absolute;
     font-size: 46px;
@@ -1975,6 +2017,11 @@ img {
     padding: 16px 18px;
     font-size: 1.8rem;
     font-weight: 100;
+  }
+
+  .videoButton:hover {
+    padding: 17px 19px;
+    border: none;
   }
 
   .imgTwoHome, .imgTwoHome.two {
@@ -2166,6 +2213,11 @@ img {
     font-weight: 100;
   }
 
+  .videoButton:hover {
+    padding: 21px 21px;
+    border: none;
+  }
+
 }
 
 
@@ -2210,7 +2262,7 @@ img {
 
 /* ------------------------------------------ */
 
-@media all and (max-width: 325px) {
+@media all and (max-width: 329px) {
 
   nav {
     padding: 12px 16px 12px 4px;
@@ -2237,6 +2289,11 @@ img {
     padding: 8px 13px;
     font-size: 1.5rem;
     font-weight: 100;
+  }
+
+  .videoButton:hover {
+    padding: 9px 14px;
+    border: none;
   }
 
 }
